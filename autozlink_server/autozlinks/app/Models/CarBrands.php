@@ -1,0 +1,21 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class CarBrands extends Model
+{
+    use HasFactory;
+
+    public function postCars()
+    {
+        return $this->hasMany(PostCars::class, 'car_brand_id');
+    }
+
+    public function carModel()
+    {
+        return $this->hasMany(CarModels::class, 'car_brand_id');
+    }
+}

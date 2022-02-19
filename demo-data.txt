@@ -1,0 +1,61 @@
+INSERT INTO `car_fuel_types`(`name`, `status`, `created_at`, `updated_at`) VALUES ('gasoline','1','2022-02-16 10:06:27','2022-02-16 10:06:27');
+INSERT INTO `car_fuel_types`(`name`, `status`, `created_at`, `updated_at`) VALUES ('diesel','1','2022-02-16 10:06:27','2022-02-16 10:06:27');
+INSERT INTO `car_fuel_types`(`name`, `status`, `created_at`, `updated_at`) VALUES ('electric batteries','1','2022-02-16 10:06:27','2022-02-16 10:06:27');
+INSERT INTO `car_fuel_types`(`name`, `status`, `created_at`, `updated_at`) VALUES ('hydrogen','1','2022-02-16 10:06:27','2022-02-16 10:06:27');
+
+INSERT INTO `car_brands`(`name`, `status`, `created_at`, `updated_at`) VALUES ('Toyota','1','2022-02-16 10:06:27','2022-02-16 10:06:27');
+INSERT INTO `car_brands`(`name`, `status`, `created_at`, `updated_at`) VALUES ('Acura','1','2022-02-16 10:06:27','2022-02-16 10:06:27');
+INSERT INTO `car_brands`(`name`, `status`, `created_at`, `updated_at`) VALUES ('Bentley','1','2022-02-16 10:06:27','2022-02-16 10:06:27');
+INSERT INTO `car_brands`(`name`, `status`, `created_at`, `updated_at`) VALUES ('Chevrolet','1','2022-02-16 10:06:27','2022-02-16 10:06:27');
+
+
+INSERT INTO `car_models`(`car_brand_id`, `name`, `status`, `created_at`, `updated_at`) VALUES (1,'Toyota cvf22','1','2022-02-16 10:06:27','2022-02-16 10:06:27');
+INSERT INTO `car_models`(`car_brand_id`, `name`, `status`, `created_at`, `updated_at`) VALUES (2,'Acura rt12','1','2022-02-16 10:06:27','2022-02-16 10:06:27');
+INSERT INTO `car_models`(`car_brand_id`, `name`, `status`, `created_at`, `updated_at`) VALUES (3,'Bentley bn43','1','2022-02-16 10:06:27','2022-02-16 10:06:27');
+INSERT INTO `car_models`(`car_brand_id`, `name`, `status`, `created_at`, `updated_at`) VALUES (4,'Chevrolet xx12','1','2022-02-16 10:06:27','2022-02-16 10:06:27');
+
+INSERT INTO `car_conditions`(`name`, `status`, `created_at`, `updated_at`) VALUES ('foreign','1','2022-02-16 10:06:27','2022-02-16 10:06:27');
+INSERT INTO `car_conditions`(`name`, `status`, `created_at`, `updated_at`) VALUES ('used','1','2022-02-16 10:06:27','2022-02-16 10:06:27');
+INSERT INTO `car_conditions`(`name`, `status`, `created_at`, `updated_at`) VALUES ('new','1','2022-02-16 10:06:27','2022-02-16 10:06:27');
+INSERT INTO `car_conditions`(`name`, `status`, `created_at`, `updated_at`) VALUES ('re-model','0','2022-02-16 10:06:27','2022-02-16 10:06:27');
+
+INSERT INTO `car_transmissions`(`name`, `status`, `created_at`, `updated_at`) VALUES ('manual','1','2022-02-16 10:06:27','2022-02-16 10:06:27');
+INSERT INTO `car_transmissions`(`name`, `status`, `created_at`, `updated_at`) VALUES ('automatic','1','2022-02-16 10:06:27','2022-02-16 10:06:27');
+INSERT INTO `car_transmissions`(`name`, `status`, `created_at`, `updated_at`) VALUES ('continuously variable','0','2022-02-16 10:06:27','2022-02-16 10:06:27');
+INSERT INTO `car_transmissions`(`name`, `status`, `created_at`, `updated_at`) VALUES ('dual-clutch','0','2022-02-16 10:06:27','2022-02-16 10:06:27');
+
+INSERT INTO `web_packages` (`id`, `type`, `title`, `description`, `price`, `instagram_price`, `fb_instagram_price`, `expiration_time`, `featured_expiration_time`, `max_gallery_photos`, `status`) VALUES
+(1, 'post_package', 'FREE', 'in gain', '0.00', 12, 950000, 21, 0, 16, 1),
+(2, 'post_package', 'BASIC', '', '25.00', NULL, NULL, 28, 5, 20, 1),
+(3, 'post_package', 'GOLD', '', '50.00', NULL, NULL, 35, 7, 30, 1),
+(4, 'featured_package', 'basic', '', '3.00', NULL, NULL, 0, 5, 0, 0),
+(5, 'featured_package', 'ultimate', '', '5.00', NULL, NULL, 0, 10, 0, 0),
+(6, 'post_package', 'PREMIUM', '', '100.00', NULL, NULL, 42, 14, 40, 1),
+(7, 'featured_package', 'BASIC', '', '10.00', NULL, NULL, 0, 7, 0, 1),
+(8, 'featured_package', 'GOLD', '', '20.00', NULL, NULL, 0, 14, 0, 1),
+(9, 'featured_package', 'PREMIUM ', '', '25.00', NULL, NULL, 21, 21, 0, 1),
+(10, 'post_package', 'Run', 'uitu', '12.00', 12, 22, 12, 54, 32, 0),
+(11, 'Select Package', 'new', '334', '12.00', 2, 2, 3, 2, 2, 1);
+
+INSERT INTO `post_cars_plans` (`type`, `title`, `price`, `price_facebook`, `price_instagram`, `featuring`, `photos`, `limit`, `description`, `expiration_time`, `featured_expiration_time`, `status`, `created_at`, `updated_at`) VALUES
+('1', 'FREE', '0.00', '0.00', '0.00', 21, 0, 16, 'in gain','','',1,'2022-02-16 10:06:27','2022-02-16 10:06:27'),
+('1', 'BASIC','0.00', '0.00', '0.00', 21, 0, 16, 'in gain','','',1,'2022-02-16 10:06:27','2022-02-16 10:06:27'),
+('1', 'GOLD','0.00', '0.00', '0.00', 21, 0, 16, 'in gain','','',1,'2022-02-16 10:06:27','2022-02-16 10:06:27'),
+('2', 'basic','0.00', '0.00', '0.00', 21, 0, 16, 'in gain','','',1,'2022-02-16 10:06:27','2022-02-16 10:06:27'),
+('2', 'ultimate', '0.00', '0.00', '0.00', 21, 0, 16, 'in gain','','',1,'2022-02-16 10:06:27','2022-02-16 10:06:27'),
+('1', 'PREMIUM','0.00', '0.00', '0.00', 21, 0, 16, 'in gain','','',1,'2022-02-16 10:06:27','2022-02-16 10:06:27'),
+('2', 'BASIC', '0.00', '0.00', '0.00', 21, 0, 16, 'in gain','','',1,'2022-02-16 10:06:27','2022-02-16 10:06:27'),
+('2', 'GOLD', '0.00', '0.00', '0.00', 21, 0, 16, 'in gain','','',1,'2022-02-16 10:06:27','2022-02-16 10:06:27'),
+('2', 'PREMIUM ','0.00', '0.00', '0.00', 21, 0, 16, 'in gain','','',1,'2022-02-16 10:06:27','2022-02-16 10:06:27'),
+('1', 'Run','0.00', '0.00', '0.00', 21, 0, 16, 'in gain','','',1,'2022-02-16 10:06:27','2022-02-16 10:06:27'),
+('1', 'new','0.00', '0.00', '0.00', 21, 0, 16, 'in gain','','',1,'2022-02-16 10:06:27','2022-02-16 10:06:27')
+
+INSERT INTO `location_citys`(`location_state_id`, `name`, `status`, `created_at`, `updated_at`) VALUES (1,'Ikeja',1,'2022-02-16 10:06:27','2022-02-16 10:06:27')
+
+INSERT INTO `location_states`(`location_country_id`, `name`, `status`, `created_at`, `updated_at`) VALUES (1,'Ikeja',1,'2022-02-16 10:06:27','2022-02-16 10:06:27')
+
+INSERT INTO `location_countrys`( `name`, `status`, `created_at`, `updated_at`) VALUES ('Nigeria',1,'2022-02-16 10:06:27','2022-02-16 10:06:27')
+
+
+
+INSERT INTO `post_cars`(`user_id`, `car_category_id`, `car_fuel_type_id`, `car_brand_id`, `car_model_id`, `car_condition_id`, `car_transmission_id`, `mileage`, `price`, `title`, `phone`, `email`, `status`, `payment_status`, `featured`, `register`, `negotiable`, `facebook_ads`, `instagram_ads`, `post_cars_plan_id`, `image`, `color`, `vin_number`, `city`, `state`, `country`, `year`, `reference`, `created_at`, `updated_at`) VALUES (1,1,1,1,1,1,1,2345,234567,'2008 TOYOTA CAMRY','0890934566','email','0','0','0','0','0','0','0','0','truck.png','red','op44','ikeja','lagos','nigeria','2006','gghjkyr','2022-02-16 10:06:27','2022-02-16 10:06:27')
