@@ -1,18 +1,18 @@
 <div class="display-flex-row header-bg display-none-max-600">
     <div class="border-menu-logo">
-        <a href="../../index.php"><img src="../../assets/img/logo-2.png" /></a>
+        <a href="../../index.php"><img src="{{ asset('img/logo-2.png')}}" /></a>
     </div>
     <div class="display-flex-row">
         <div class="display-flex-row heading-margin heading-search">
-            <span class="heading-search-icon"><img src="../../assets/img/icons/search.svg" /></span>
+            <span class="heading-search-icon"><img src="{{ asset('img/icons/search.svg')}}" /></span>
             <span><input type="text" placeholder="Type your search here" class="heading-search-input" /></span>
         </div>
         <div class="display-flex-row heading-margin-right">
-            <div class=" heading-margin"><img src="../../assets/img/bell-dot.png" /></div>
+            <div class=" heading-margin"><img src="{{ asset('img/bell-dot.png')}}" /></div>
             <div>
                 <div class="drop-down-menu">
                     <label for="hcb111" class="hcb111-img">
-                        <img src="../../assets/img/admin-user.png" />
+                        <img src="{{ asset('img/admin-user.png')}}" />
                     </label>
                     <input type="checkbox" id="hcb111" name="hcb111">
                     <ul class="nav-item-sub-ul hcb111-space">
@@ -35,8 +35,8 @@
 
 <div class="display-none-min-600 mobile-heading-bg">
     <div class="display-flex-row heading-img-mobile-view">
-        <img src="../../assets/img/logo.png" class="heading-logo-mobile-v" />
-        <img src="../../assets/img/bell-dot.png" style="height:24px; width: 25px;" />
+        <img src="{{ asset('img/logo.png')}}" class="heading-logo-mobile-v" />
+        <img src="{{ asset('img/bell-dot.png')}}" style="height:24px; width: 25px;" />
     </div>
     <nav class="navbar">
       <div class="hamburger-menu">
@@ -46,7 +46,7 @@
       </div>
       <div class="nav-list">
             <div class="display-flex-row-no-justify heading-margin heading-search">
-                <span class="heading-search-icon"><img src="../../assets/img/icons/search.svg" /></span>
+                <span class="heading-search-icon"><img src="{{ asset('img/icons/search.svg')}}" /></span>
                 <span><input type="text" placeholder="Type your search here" class="heading-search-input-m" /></span>
             </div>
             <ul class="active-aside-ul-m display-flex-column" id="scroll" data-simplebar data-simplebar-auto-hide="false">
