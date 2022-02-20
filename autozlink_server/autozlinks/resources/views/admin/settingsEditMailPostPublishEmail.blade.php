@@ -2,14 +2,13 @@
 <html lang="en">
     <head>
         <title>Autozlinks || Admin - Settings</title>
-        <?php require_once "includes/meta.php"; ?>
-        <?php $dt = "5"; require "components/actions-settings-mail-message-edit.php"; ?>
+        @include('admin.layouts.meta')
     </head>
     <body class="body-bg">
-        <?php require_once "includes/header.php"; ?>
-        <main class="main">
-            <section class="display-none-max-600">
-                <?php require_once "includes/sidebar.php"; ?>
+        @include('admin.layouts.header')
+    <main class="main">
+        <section class="display-none-max-600">
+            @include('admin.layouts.sidebar')
             </section> 
             <section class="main-content">
                 <div class="display-flex-column">
@@ -59,8 +58,8 @@
             </section>
         </main>
         
-        <?php require_once "includes/footer.php"; ?>
-        <?php require_once "includes/script.php"; ?>
+        @include('admin.layouts.footer')
+        @include('admin.layouts.script')
         <script>
             var msg = new URL(window.location.href).searchParams.get("msg");
             if(msg === "sucess"){

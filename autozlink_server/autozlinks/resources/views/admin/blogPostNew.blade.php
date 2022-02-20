@@ -2,14 +2,13 @@
 <html lang="en">
     <head>
         <title>Autozlinks || Admin - Blog</title>
-        <?php require_once "includes/meta.php"; ?>
-        <?php require "components/actions-blog-add.php"; ?>
+        @include('admin.layouts.meta')
     </head>
     <body class="body-bg">
-        <?php require_once "includes/header.php"; ?>
-        <main class="main">
-            <section class="display-none-max-600">
-                <?php require_once "includes/sidebar.php"; ?>
+        @include('admin.layouts.header')
+    <main class="main">
+        <section class="display-none-max-600">
+            @include('admin.layouts.sidebar')
             </section> 
             <section class="main-content">
                 <div class="display-flex-column">
@@ -88,8 +87,8 @@
             </section>
         </main>
         
-        <?php require_once "includes/footer.php"; ?>
-        <?php require_once "includes/script.php"; ?>
+        @include('admin.layouts.footer')
+        @include('admin.layouts.script')
 
         <script src="https://cdn.tiny.cloud/1/0bafku73iwl16lvy29rbw1ndewfrm8fc90bly3tnv1s8nqoz/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
         <script>
